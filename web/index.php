@@ -16,6 +16,12 @@ $app = new Silex\Application();
 //en dev, nous voulons voir les erreurs
 $app['debug'] = true;
 
+/* twig */
+$app->register(new Silex\Provider\TwigServiceProvider(), array(
+    "twig.path" => dirname(__DIR__) . "/App/Views",
+    'twig.options' => array('cache' => dirname(__DIR__).'/cache', 'strict_variables' => true)
+));
+
 //On indique où allez pour le chemin http://localhost/SilexSkeleton/public/
 $app->mount("/", new App\Controllers\IndexController());
 

@@ -9,8 +9,8 @@ namespace App\Controllers {
     class IndexController implements ControllerProviderInterface {
 
 
-        public function index() { 
-			return 'Bonjour';
+        public function index(Application $app) { 
+			return $app["twig"]->render("index/index.html.twig");
         }
 
 
