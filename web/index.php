@@ -1,29 +1,42 @@
 <?php
 
-//On initialise le timeZone
-ini_set('date.timezone', 'Europe/Brussels');
+/*
+ * CONFIGUTATIONS
+ * --------------
+ */
 
-//On ajoute l'autoloader
+ini_set('date.timezone', 'Europe/Paris');
+
+/*
+ * LOADER
+ * ------
+ */
+
 $loader = require_once __DIR__ . '/../vendor/autoload.php';
-
-//dans l'autoloader nous ajoutons notre répertoire applicatif 
 $loader->add("App",dirname(__DIR__));
 
+/*
+ * APPLICATION
+ * -----------
+ */
 
-//Nous instancions un objet Silex\Application
 $app = new Silex\Application();
-
-//en dev, nous voulons voir les erreurs
 $app['debug'] = true;
 
-/* twig */
+// Twig
 $app->register(new Silex\Provider\TwigServiceProvider(), array(
     "twig.path" => dirname(__DIR__) . "/App/Views",
     'twig.options' => array('cache' => dirname(__DIR__).'/cache', 'strict_variables' => true)
 ));
 
-//On indique où allez pour le chemin http://localhost/SilexSkeleton/public/
+// UrlGenerator (de type ->bind("index.index");)
+$app->register(new Silex\Provider\UrlGeneratorServiceProvider());
+
+/*
+ * ROUTAGE VERS LES CONTROLLERS
+ * ----------------------------
+ */
 $app->mount("/", new App\Controllers\IndexController());
 
-//On lance l'application
+// Lancement ! :)
 $app->run();
