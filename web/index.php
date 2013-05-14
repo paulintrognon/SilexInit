@@ -16,5 +16,8 @@ $app = new Silex\Application();
 //en dev, nous voulons voir les erreurs
 $app['debug'] = true;
 
+//On indique où allez pour le chemin http://localhost/SilexSkeleton/public/
+$app->mount("/", new App\Controllers\IndexController());
+
 //On lance l'application
 $app->run();
