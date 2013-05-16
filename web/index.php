@@ -1,5 +1,9 @@
 <?php
 
+use SilexAssetic\AsseticServiceProvider;
+use Silex\Provider\TwigServiceProvider;
+use Silex\Provider\UrlGeneratorServiceProvider;
+
 /*
  * CONFIGUTATIONS
  * --------------
@@ -24,13 +28,22 @@ $app = new Silex\Application();
 $app['debug'] = true;
 
 // Twig
-$app->register(new Silex\Provider\TwigServiceProvider(), array(
+$app->register(new TwigServiceProvider(), array(
     "twig.path" => dirname(__DIR__) . "/App/Views",
     'twig.options' => array('cache' => dirname(__DIR__).'/cache', 'strict_variables' => true)
 ));
 
+// Assets (via Assetic)
+$app['assetic.path_to_web'] = __DIR__ . '/assets';
+$app->register(new AsseticServiceProvider(), array(
+	'assetic.options' => array(
+		'debug'            => $app['debug'],
+		'auto_dump_assets' => $app['debug'],
+	)
+));
+
 // UrlGenerator (de type ->bind("index.index");)
-$app->register(new Silex\Provider\UrlGeneratorServiceProvider());
+$app->register(new UrlGeneratorServiceProvider());
 
 /*
  * ROUTAGE VERS LES CONTROLLERS
