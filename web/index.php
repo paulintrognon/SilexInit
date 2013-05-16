@@ -1,15 +1,12 @@
 <?php
 
-use SilexAssetic\AsseticServiceProvider;
-use Silex\Provider\TwigServiceProvider;
-use Silex\Provider\UrlGeneratorServiceProvider;
-
-/*
- * CONFIGUTATIONS
- * --------------
+/* ===============
+ * == index.php ==
+ * ===============
+ * Point d'entré de l'application. C'est là que toutes les composantes se
+ * regroupent !
+ * ===============
  */
-
-ini_set('date.timezone', 'Europe/Paris');
 
 /*
  * LOADER
@@ -17,7 +14,7 @@ ini_set('date.timezone', 'Europe/Paris');
  */
 
 $loader = require_once __DIR__ . '/../vendor/autoload.php';
-$loader->add("App",dirname(__DIR__));
+$loader->add("App", dirname(__DIR__));
 
 /*
  * APPLICATION
@@ -25,31 +22,12 @@ $loader->add("App",dirname(__DIR__));
  */
 
 $app = new Silex\Application();
-$app['debug'] = true;
 
-// Twig
-$app->register(new TwigServiceProvider(), array(
-    "twig.path" => dirname(__DIR__) . "/App/Views",
-    'twig.options' => array('cache' => dirname(__DIR__).'/cache', 'strict_variables' => true)
-));
+// On inclu la configuration (générée au préalable par build-config.php)
+require __DIR__.'/../config/config.php';
 
-// Assets (via Assetic)
-$app['assetic.path_to_web'] = __DIR__ . '/assets';
-$app->register(new AsseticServiceProvider(), array(
-	'assetic.options' => array(
-		'debug'            => $app['debug'],
-		'auto_dump_assets' => $app['debug'],
-	)
-));
-
-// UrlGenerator (de type ->bind("index.index");)
-$app->register(new UrlGeneratorServiceProvider());
-
-/*
- * ROUTAGE VERS LES CONTROLLERS
- * ----------------------------
- */
-$app->mount("/", new App\Controllers\IndexController());
+// On inclu l'application en temps que tel
+require __DIR__.'/../App/app.php';
 
 // Lancement ! :)
 $app->run();
