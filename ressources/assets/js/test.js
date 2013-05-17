@@ -1,2 +1,2 @@
 
-alert('Tout est en ordre ! :)');
+console.info('Tout est en ordre ! :)');

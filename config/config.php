@@ -7,14 +7,31 @@
  * =======================
  */
 
+/*
+ * CONSTANTES
+ */
 define('ROOT_PATH',			realpath(__DIR__.'/../').'/');
 
+/*
+ * TYPE DE VERSION
+ */
 $app['debug'] = true;
-
-ini_set('date.timezone', 'Europe/Paris');
 
 ini_set('display_errors', 1);
 error_reporting(-1);
+
+/*
+ * CONFIGURATION DU SERVEUR
+ */
+ini_set('date.timezone', 'Europe/Paris');
+
+// Local
+$app['locale'] = 'fr';
+$app['session.default_locale'] = $app['locale'];
+
+/*
+ * CONFIGURATION DES REPERTOIRES
+ */
 
 // Cache
 $app['cache.path'] = ROOT_PATH . 'cache';
