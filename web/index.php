@@ -9,7 +9,7 @@
  */
 
 /*
- * DEV OR PROD ?
+ * dev | preprod | prod
  */
 define('APP_VERSION', 'dev');
 
