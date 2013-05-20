@@ -3,7 +3,8 @@
 /* =======================
  * == configuration.php ==
  * =======================
- * Ce fichier va être à l'avenir généré par build-config.php
+ * Configuration commune à la version dev ou prod
+ * Inclu la config dev ou prod selon le paramètre dans index.php
  * =======================
  */
 
@@ -38,8 +39,11 @@ $app['twig.options.cache'] = $app['cache.path'] . '/twig';
  * Adding prod or dev config depending of index.php configuration
  */
 
-if(APP_IS_DEV) {
+if(APP_VERSION == 'dev') {
 	require 'dev.php';
+}
+else if(APP_VERSION == 'preprod') {
+	require 'preprod.php';
 }
 else {
 	require 'prod.php';
