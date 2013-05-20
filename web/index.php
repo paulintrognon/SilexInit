@@ -9,6 +9,11 @@
  */
 
 /*
+ * DEV OR PROD ?
+ */
+define('APP_IS_DEV', true);
+
+/*
  * LOADER
  * ------
  */

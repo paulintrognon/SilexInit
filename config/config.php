@@ -10,15 +10,7 @@
 /*
  * CONSTANTES
  */
-define('ROOT_PATH',			realpath(__DIR__.'/../').'/');
-
-/*
- * TYPE DE VERSION
- */
-$app['debug'] = true;
-
-ini_set('display_errors', 1);
-error_reporting(-1);
+define('ROOT_PATH', realpath(__DIR__.'/../').'/');
 
 /*
  * CONFIGURATION DU SERVEUR
@@ -42,14 +34,13 @@ $app['http_cache.cache_dir'] = $app['cache.path'] . '/http';
 // Twig cache
 $app['twig.options.cache'] = $app['cache.path'] . '/twig';
 
-// Assetic
-$app['assetic.enabled']              = true;
-$app['assetic.path_to_cache']        = $app['cache.path'] . '/assetic' ;
-$app['assetic.path_to_web']          = ROOT_PATH . 'web';
-$app['assetic.input.path_to_assets'] = ROOT_PATH . 'ressources/assets';
+/*
+ * Adding prod or dev config depending of index.php configuration
+ */
 
-$app['assetic.input.path_to_css']       = $app['assetic.input.path_to_assets'] . '/less/*.less';
-$app['assetic.output.path_to_css']      = 'css/styles.css';
-
-$app['assetic.input.path_to_js']        = $app['assetic.input.path_to_assets'] . '/js/*.js';
-$app['assetic.output.path_to_js']       = 'js/scripts.js';
+if(APP_IS_DEV) {
+	require 'dev.php';
+}
+else {
+	require 'prod.php';
+}
