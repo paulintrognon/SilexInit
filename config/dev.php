@@ -22,7 +22,7 @@ $app['assetic.input.path_to_css']       = $app['assetic.input.path_to_assets'] .
 $app['assetic.output.path_to_css']      = 'css/styles.css';
 
 $app['assetic.input.path_to_js']        = array(
-	$app['assetic.input.path_to_assets'] . '/js/libs/dev/*.js',
+	$app['assetic.input.path_to_assets'] . '/js/libs/*.js',
 	$app['assetic.input.path_to_assets'] . '/js/*.js',
 );
 $app['assetic.output.path_to_js']       = 'js/scripts.js';
