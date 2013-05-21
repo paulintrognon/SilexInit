@@ -13,15 +13,20 @@ use Silex\Provider\TwigServiceProvider;
 use Silex\Provider\SessionServiceProvider;
 use Silex\Provider\UrlGeneratorServiceProvider;
 use Silex\Provider\MonologServiceProvider;
+use Silex\Provider\HttpCacheServiceProvider;
 
 // Basic services
 $app->register(new SessionServiceProvider());
 $app->register(new UrlGeneratorServiceProvider());
+$app->register(new HttpCacheServiceProvider());
 
 // Twig
 $app->register(new TwigServiceProvider(), array(
     "twig.path" => dirname(__DIR__) . "/ressources/Views",
-    'twig.options' => array('cache' => dirname(__DIR__).'/cache', 'strict_variables' => true)
+    'twig.options' => array(
+		'cache' => isset($app['twig.options.cache']) ? $app['twig.options.cache'] : false,
+		'strict_variables' => true
+	)
 ));
 
 // Monolog
