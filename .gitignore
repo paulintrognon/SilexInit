@@ -1,5 +1,6 @@
 vendor/
 cache/
+log/app.log
 web/js/
 web/css/
-log/
+composer.phar
