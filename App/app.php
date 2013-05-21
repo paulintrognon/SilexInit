@@ -10,8 +10,13 @@
 
 use SilexAssetic\AsseticServiceProvider;
 use Silex\Provider\TwigServiceProvider;
+use Silex\Provider\SessionServiceProvider;
 use Silex\Provider\UrlGeneratorServiceProvider;
 use Silex\Provider\MonologServiceProvider;
+
+// Basic services
+$app->register(new SessionServiceProvider());
+$app->register(new UrlGeneratorServiceProvider());
 
 // Twig
 $app->register(new TwigServiceProvider(), array(
@@ -19,6 +24,7 @@ $app->register(new TwigServiceProvider(), array(
     'twig.options' => array('cache' => dirname(__DIR__).'/cache', 'strict_variables' => true)
 ));
 
+// Monolog
 $app->register(new MonologServiceProvider(), array(
     'monolog.logfile' => __DIR__.'/../log/app.log',
     'monolog.name'    => 'app',
@@ -64,9 +70,6 @@ if (isset($app['assetic.enabled']) && $app['assetic.enabled']) {
 		})
 	);
 }
-
-// UrlGenerator (de type ->bind("index.index");)
-$app->register(new UrlGeneratorServiceProvider());
 
 // Routage vers les controllers
 require 'routing.php';

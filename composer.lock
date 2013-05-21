@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "6d8250a705109a9fa1d081caff0b8412",
+    "hash": "4e3712338700b906fdf69e204530c7c1",
     "packages": [
         {
             "name": "kriswallsmith/assetic",
@@ -465,17 +465,17 @@
         },
         {
             "name": "symfony/event-dispatcher",
-            "version": "dev-master",
+            "version": "2.3.x-dev",
             "target-dir": "Symfony/Component/EventDispatcher",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "4b34aad44d0a2d91f301ee967151ce0980f39930"
+                "reference": "v2.3.0-RC1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/4b34aad44d0a2d91f301ee967151ce0980f39930",
-                "reference": "4b34aad44d0a2d91f301ee967151ce0980f39930",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/v2.3.0-RC1",
+                "reference": "v2.3.0-RC1",
                 "shasum": ""
             },
             "require": {
@@ -491,7 +491,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4-dev"
+                    "dev-master": "2.3-dev"
                 }
             },
             "autoload": {
@@ -515,7 +515,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "http://symfony.com",
-            "time": "2013-05-16 07:54:39"
+            "time": "2013-05-13 14:36:40"
         },
         {
             "name": "symfony/finder",
@@ -616,17 +616,17 @@
         },
         {
             "name": "symfony/http-kernel",
-            "version": "dev-master",
+            "version": "2.3.x-dev",
             "target-dir": "Symfony/Component/HttpKernel",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel.git",
-                "reference": "8f81e20ffb238fc395c06ab6279caf60ee806dd9"
+                "reference": "22a755a39e2ccae40fa3d5d441afe0365a98282b"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/8f81e20ffb238fc395c06ab6279caf60ee806dd9",
-                "reference": "8f81e20ffb238fc395c06ab6279caf60ee806dd9",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/22a755a39e2ccae40fa3d5d441afe0365a98282b",
+                "reference": "22a755a39e2ccae40fa3d5d441afe0365a98282b",
                 "shasum": ""
             },
             "require": {
@@ -658,7 +658,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4-dev"
+                    "dev-master": "2.3-dev"
                 }
             },
             "autoload": {
@@ -682,7 +682,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "http://symfony.com",
-            "time": "2013-05-16 07:54:39"
+            "time": "2013-05-16 21:58:08"
         },
         {
             "name": "symfony/process",
