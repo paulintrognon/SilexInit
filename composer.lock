@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "ef93695468d36af3e5807402d2b535be",
+    "hash": "6d8250a705109a9fa1d081caff0b8412",
     "packages": [
         {
             "name": "kriswallsmith/assetic",
@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "v1.1.0"
+                "reference": "00e037b8341d64848cf01ffb718fd52aa1d773b0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/v1.1.0",
-                "reference": "v1.1.0",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/00e037b8341d64848cf01ffb718fd52aa1d773b0",
+                "reference": "00e037b8341d64848cf01ffb718fd52aa1d773b0",
                 "shasum": ""
             },
             "require": {
@@ -45,7 +45,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "1.1-dev"
+                    "dev-master": "1.2-dev"
                 }
             },
             "autoload": {
@@ -74,7 +74,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2013-05-16 05:28:39"
+            "time": "2013-05-20 15:24:26"
         },
         {
             "name": "leafo/lessphp",
@@ -178,6 +178,68 @@
                 "silex"
             ],
             "time": "2013-05-15 15:54:41"
+        },
+        {
+            "name": "monolog/monolog",
+            "version": "dev-master",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Seldaek/monolog.git",
+                "reference": "ae8500e5b1604963ee63d7bccd6c85808bfea974"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/ae8500e5b1604963ee63d7bccd6c85808bfea974",
+                "reference": "ae8500e5b1604963ee63d7bccd6c85808bfea974",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.0",
+                "psr/log": ">=1.0,<2.0"
+            },
+            "require-dev": {
+                "doctrine/couchdb": "dev-master",
+                "mlehner/gelf-php": "1.0.*",
+                "raven/raven": "0.3.*"
+            },
+            "suggest": {
+                "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
+                "ext-amqp": "Allow sending log messages to an AMQP server (1.0+ required)",
+                "ext-mongo": "Allow sending log messages to a MongoDB server",
+                "mlehner/gelf-php": "Allow sending log messages to a GrayLog2 server",
+                "raven/raven": "Allow sending log messages to a Sentry server"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "1.5.x-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Monolog": "src/"
+                }
+            },
+            "notification-url": "http://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Jordi Boggiano",
+                    "email": "j.boggiano@seld.be",
+                    "homepage": "http://seld.be",
+                    "role": "Developer"
+                }
+            ],
+            "description": "Sends your logs to files, sockets, inboxes, databases and various web services",
+            "homepage": "http://github.com/Seldaek/monolog",
+            "keywords": [
+                "log",
+                "logging",
+                "psr-3"
+            ],
+            "time": "2013-05-13 14:29:58"
         },
         {
             "name": "pimple/pimple",
@@ -408,12 +470,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/EventDispatcher.git",
-                "reference": "2d84c66c090ed676f9ac60a46b9366d4dd80a523"
+                "reference": "4b34aad44d0a2d91f301ee967151ce0980f39930"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/2d84c66c090ed676f9ac60a46b9366d4dd80a523",
-                "reference": "2d84c66c090ed676f9ac60a46b9366d4dd80a523",
+                "url": "https://api.github.com/repos/symfony/EventDispatcher/zipball/4b34aad44d0a2d91f301ee967151ce0980f39930",
+                "reference": "4b34aad44d0a2d91f301ee967151ce0980f39930",
                 "shasum": ""
             },
             "require": {
@@ -429,7 +491,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -453,7 +515,7 @@
             ],
             "description": "Symfony EventDispatcher Component",
             "homepage": "http://symfony.com",
-            "time": "2013-05-13 14:36:40"
+            "time": "2013-05-16 07:54:39"
         },
         {
             "name": "symfony/finder",
@@ -504,17 +566,17 @@
         },
         {
             "name": "symfony/http-foundation",
-            "version": "dev-master",
+            "version": "2.3.x-dev",
             "target-dir": "Symfony/Component/HttpFoundation",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpFoundation.git",
-                "reference": "ee8be5be1a7170cf23daadeac95299b3ab8ed0c3"
+                "reference": "v2.3.0-RC1"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/ee8be5be1a7170cf23daadeac95299b3ab8ed0c3",
-                "reference": "ee8be5be1a7170cf23daadeac95299b3ab8ed0c3",
+                "url": "https://api.github.com/repos/symfony/HttpFoundation/zipball/v2.3.0-RC1",
+                "reference": "v2.3.0-RC1",
                 "shasum": ""
             },
             "require": {
@@ -523,7 +585,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4-dev"
+                    "dev-master": "2.3-dev"
                 }
             },
             "autoload": {
@@ -550,7 +612,7 @@
             ],
             "description": "Symfony HttpFoundation Component",
             "homepage": "http://symfony.com",
-            "time": "2013-05-16 07:54:39"
+            "time": "2013-05-10 06:00:03"
         },
         {
             "name": "symfony/http-kernel",
@@ -559,12 +621,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel.git",
-                "reference": "6c5490b05ca47ebe7c43af369b679eb1ce0a9639"
+                "reference": "8f81e20ffb238fc395c06ab6279caf60ee806dd9"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/6c5490b05ca47ebe7c43af369b679eb1ce0a9639",
-                "reference": "6c5490b05ca47ebe7c43af369b679eb1ce0a9639",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/8f81e20ffb238fc395c06ab6279caf60ee806dd9",
+                "reference": "8f81e20ffb238fc395c06ab6279caf60ee806dd9",
                 "shasum": ""
             },
             "require": {
@@ -596,7 +658,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -620,7 +682,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "http://symfony.com",
-            "time": "2013-05-13 14:36:40"
+            "time": "2013-05-16 07:54:39"
         },
         {
             "name": "symfony/process",
@@ -629,12 +691,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Process.git",
-                "reference": "v2.3.0-BETA2"
+                "reference": "75c810176f8e069714cef8696d7ecc3aa86e8168"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Process/zipball/v2.3.0-BETA2",
-                "reference": "v2.3.0-BETA2",
+                "url": "https://api.github.com/repos/symfony/Process/zipball/75c810176f8e069714cef8696d7ecc3aa86e8168",
+                "reference": "75c810176f8e069714cef8696d7ecc3aa86e8168",
                 "shasum": ""
             },
             "require": {
@@ -643,7 +705,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -667,21 +729,21 @@
             ],
             "description": "Symfony Process Component",
             "homepage": "http://symfony.com",
-            "time": "2013-05-06 20:03:44"
+            "time": "2013-05-16 07:54:39"
         },
         {
             "name": "symfony/routing",
-            "version": "dev-master",
+            "version": "2.3.x-dev",
             "target-dir": "Symfony/Component/Routing",
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Routing.git",
-                "reference": "214dcf7be79a073bb21fe4acf57e8af1bb401d81"
+                "reference": "255e1163b74a22cd83d3fd51d63c0588afe0bc56"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Routing/zipball/214dcf7be79a073bb21fe4acf57e8af1bb401d81",
-                "reference": "214dcf7be79a073bb21fe4acf57e8af1bb401d81",
+                "url": "https://api.github.com/repos/symfony/Routing/zipball/255e1163b74a22cd83d3fd51d63c0588afe0bc56",
+                "reference": "255e1163b74a22cd83d3fd51d63c0588afe0bc56",
                 "shasum": ""
             },
             "require": {
@@ -701,7 +763,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.4-dev"
+                    "dev-master": "2.3-dev"
                 }
             },
             "autoload": {
@@ -725,7 +787,7 @@
             ],
             "description": "Symfony Routing Component",
             "homepage": "http://symfony.com",
-            "time": "2013-05-16 07:54:39"
+            "time": "2013-05-20 08:57:26"
         },
         {
             "name": "symfony/twig-bridge",
@@ -792,12 +854,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "f6ebd46fad09d88302f6511db6b1f08d22a80fba"
+                "reference": "ba88c755579c06e7ccb5ee73c6e27e88a1fed114"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/f6ebd46fad09d88302f6511db6b1f08d22a80fba",
-                "reference": "f6ebd46fad09d88302f6511db6b1f08d22a80fba",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/ba88c755579c06e7ccb5ee73c6e27e88a1fed114",
+                "reference": "ba88c755579c06e7ccb5ee73c6e27e88a1fed114",
                 "shasum": ""
             },
             "require": {
@@ -833,7 +895,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-05-15 14:22:32"
+            "time": "2013-05-17 10:06:31"
         }
     ],
     "packages-dev": [
@@ -847,9 +909,9 @@
         "mheap/silex-assetic": 20,
         "leafo/lessphp": 20
     },
-    "platform": [
-
-    ],
+    "platform": {
+        "php": ">=5.3.3"
+    },
     "platform-dev": [
 
     ]

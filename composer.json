@@ -1,11 +1,12 @@
 {
     "minimum-stability":"dev",
     "require":{
+        "php"                   : ">=5.3.3",
         "silex/silex"			: "1.0.*",
         "symfony/twig-bridge"	: "2.1.*",
         "twig/twig"				: ">=1.8,<2.0-dev",
 		"mheap/Silex-Assetic"	: "dev-master@dev",
-		"leafo/lessphp"			: "dev-master"
+		"leafo/lessphp"			: "dev-master",
+        "monolog/monolog"       : "~1.0"
     }
-
 }
