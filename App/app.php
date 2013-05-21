@@ -11,11 +11,18 @@
 use SilexAssetic\AsseticServiceProvider;
 use Silex\Provider\TwigServiceProvider;
 use Silex\Provider\UrlGeneratorServiceProvider;
+use Silex\Provider\MonologServiceProvider;
 
 // Twig
 $app->register(new TwigServiceProvider(), array(
     "twig.path" => dirname(__DIR__) . "/ressources/Views",
     'twig.options' => array('cache' => dirname(__DIR__).'/cache', 'strict_variables' => true)
+));
+
+$app->register(new MonologServiceProvider(), array(
+    'monolog.logfile' => __DIR__.'/../log/app.log',
+    'monolog.name'    => 'app',
+    'monolog.level'   => $app['monolog.level']
 ));
 
 // Assets (via Assetic)

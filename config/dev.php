@@ -26,3 +26,5 @@ $app['assetic.input.path_to_js']        = array(
 	$app['assetic.input.path_to_assets'] . '/js/*.js',
 );
 $app['assetic.output.path_to_js']       = 'js/scripts.js';
+
+$app['monolog.level'] = Monolog\Logger::DEBUG;

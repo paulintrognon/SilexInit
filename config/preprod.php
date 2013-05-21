@@ -14,3 +14,5 @@ error_reporting(-1);
 
 // Assetic
 $app['assetic.enabled'] = false;
+
+$app['monolog.level'] = Monolog\Logger::WARNING;
