@@ -6,27 +6,33 @@ namespace App\Controllers {
     use Silex\ControllerProviderInterface;
 
 
-    class IndexController implements ControllerProviderInterface {
+    abstract class Controller implements ControllerProviderInterface {
+		
+		protected $controllerName = '';
+		protected $methods = array();
 
+		public function __construct() {
+			$this->connectMethods();
+		}
 
-        public function index(Application $app) { 
-			return $app["twig"]->render("index/index.html.twig");
-        }
-
-
-        public function info() {
-            return phpinfo();
-        }
-
-        public function connect(Application $app) {
+		public function connect(Application $app) {
+            // crée un nouveau controller basé sur la route indiquée dans App/routing.php
+            $currentController = $app['controllers_factory'];
+				
+			$controllerClassName = get_class($this);
+			$app['monolog']->addDebug('Nouveau controller : '.$controllerClassName);
 			
-            // créer un nouveau controller basé sur la route par défaut
-            $index = $app['controllers_factory'];
-            $index->match("/", 'App\Controllers\IndexController::index')->bind("index.index");
-            $index->match("/info", 'App\Controllers\IndexController::info')->bind("index.info");
+			// Ajout des méthodes au controller, en associant les routes correspondantes
+			foreach ($this->methods as $route => $method) {
+				
+				$currentController
+					->match($route, $controllerClassName.'::'.$method)
+					->bind($this->controllerName.'.'.$method);
+			}
 			
-            return $index;
+            return $currentController;
         }
+
+        abstract protected function connectMethods();
     }
-
 }
