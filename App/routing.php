@@ -8,4 +8,4 @@
  * ===============
  */
 
-$app->mount("/", new App\Controllers\IndexController());
+$app->mount("/", new App\Controllers\HomeController());
