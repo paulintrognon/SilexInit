@@ -14,6 +14,8 @@ use Silex\Provider\SessionServiceProvider;
 use Silex\Provider\UrlGeneratorServiceProvider;
 use Silex\Provider\MonologServiceProvider;
 use Silex\Provider\HttpCacheServiceProvider;
+use Silex\Provider\TranslationServiceProvider;
+use Symfony\Component\Translation\Loader\YamlFileLoader;
 
 // Basic services
 $app->register(new SessionServiceProvider());
@@ -28,6 +30,16 @@ $app->register(new TwigServiceProvider(), array(
 		'strict_variables' => true
 	)
 ));
+
+// Translation
+$app->register(new TranslationServiceProvider());
+$app['translator'] = $app->share($app->extend('translator', function($translator, $app) {
+    $translator->addLoader('yaml', new YamlFileLoader());
+
+    $translator->addResource('yaml', dirname(__DIR__) . '/ressources/locales/fr.yml', 'fr');
+
+    return $translator;
+}));
 
 // Monolog
 $app->register(new MonologServiceProvider(), array(
