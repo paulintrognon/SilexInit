@@ -7,6 +7,7 @@
         "twig/twig"				: ">=1.8,<2.0-dev",
 		"mheap/Silex-Assetic"	: "dev-master@dev",
 		"leafo/lessphp"			: "dev-master",
-        "monolog/monolog"       : "~1.0"
+        "monolog/monolog"       : "~1.0",
+		"symfony/translation"	: "~2.3"
     }
 }
