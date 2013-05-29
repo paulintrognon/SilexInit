@@ -9,3 +9,4 @@
  */
 
 $app->mount("/", new App\Controllers\HomeController());
+$app->mount("/execute", new App\Controllers\ExecuteController());

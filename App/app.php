@@ -43,6 +43,13 @@ $app['translator'] = $app->share($app->extend('translator', function($translator
     return $translator;
 }));
 
+$current_language = $app['session']->get('current_language');
+
+if($current_language) {
+	$app['translator']->setLocale($current_language);
+}
+
+
 // Monolog
 $app->register(new MonologServiceProvider(), array(
     'monolog.logfile' => __DIR__.'/../log/app.log',

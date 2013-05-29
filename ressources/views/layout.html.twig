@@ -13,6 +13,9 @@
 	<body>
 		<div id="content">
 
+			<a href="{{ path('execute.language', {language: 'fr'}) }}">Français</a>
+			<a href="{{ path('execute.language', {language: 'en'}) }}">English</a>
+
 			{% block pageContent %}
 				
 			{% endblock %}
