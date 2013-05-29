@@ -21,6 +21,9 @@ ini_set('date.timezone', 'Europe/Paris');
 // Local
 $app['locale'] = 'fr';
 $app['session.default_locale'] = $app['locale'];
+$app['translator.messages'] = array(
+    'en' => ROOT_PATH . 'resources/locales/en.yml',
+);
 
 /*
  * CONFIGURATION DES REPERTOIRES

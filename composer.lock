@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "800df52a9c6625d0eb8d796347666f3d",
+    "hash": "d6c721d8acf2ec97a0047eb8069bef0c",
     "packages": [
         {
             "name": "kriswallsmith/assetic",
@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "c24f69222dc837625715a6fa902a3e2fa4fb5038"
+                "reference": "de188e471f59918b0b523b8fc346761c2e4ff1a4"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/c24f69222dc837625715a6fa902a3e2fa4fb5038",
-                "reference": "c24f69222dc837625715a6fa902a3e2fa4fb5038",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/de188e471f59918b0b523b8fc346761c2e4ff1a4",
+                "reference": "de188e471f59918b0b523b8fc346761c2e4ff1a4",
                 "shasum": ""
             },
             "require": {
@@ -74,7 +74,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2013-05-22 17:17:41"
+            "time": "2013-05-29 08:54:41"
         },
         {
             "name": "leafo/lessphp",
@@ -123,12 +123,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/mheap/Silex-Assetic.git",
-                "reference": "268f92e971808525c8bbc9276c7edfe8d8f26905"
+                "reference": "8e6243f84100987a313ebb903e378b1de6cc8fb8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/mheap/Silex-Assetic/zipball/268f92e971808525c8bbc9276c7edfe8d8f26905",
-                "reference": "268f92e971808525c8bbc9276c7edfe8d8f26905",
+                "url": "https://api.github.com/repos/mheap/Silex-Assetic/zipball/8e6243f84100987a313ebb903e378b1de6cc8fb8",
+                "reference": "8e6243f84100987a313ebb903e378b1de6cc8fb8",
                 "shasum": ""
             },
             "require": {
@@ -177,7 +177,7 @@
                 "assetic",
                 "silex"
             ],
-            "time": "2013-05-15 15:54:41"
+            "time": "2013-05-28 13:04:36"
         },
         {
             "name": "monolog/monolog",
@@ -185,12 +185,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/Seldaek/monolog.git",
-                "reference": "bda5757cdecae6e280f5914be18812d8c5db7756"
+                "reference": "a3864e0b9f0d35ee50e1e3f0a1f73cef56d50e87"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/bda5757cdecae6e280f5914be18812d8c5db7756",
-                "reference": "bda5757cdecae6e280f5914be18812d8c5db7756",
+                "url": "https://api.github.com/repos/Seldaek/monolog/zipball/a3864e0b9f0d35ee50e1e3f0a1f73cef56d50e87",
+                "reference": "a3864e0b9f0d35ee50e1e3f0a1f73cef56d50e87",
                 "shasum": ""
             },
             "require": {
@@ -200,7 +200,7 @@
             "require-dev": {
                 "doctrine/couchdb": "dev-master",
                 "mlehner/gelf-php": "1.0.*",
-                "raven/raven": "0.3.*"
+                "raven/raven": "0.5.*"
             },
             "suggest": {
                 "doctrine/couchdb": "Allow sending log messages to a CouchDB server",
@@ -239,7 +239,7 @@
                 "logging",
                 "psr-3"
             ],
-            "time": "2013-05-21 19:11:01"
+            "time": "2013-05-28 12:09:06"
         },
         {
             "name": "pimple/pimple",
@@ -524,12 +524,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "5524895796af80bc32ff2809a642bf1b5b463353"
+                "reference": "9b21ea89de1b02e3cf1db5941bff57627793d6dd"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/5524895796af80bc32ff2809a642bf1b5b463353",
-                "reference": "5524895796af80bc32ff2809a642bf1b5b463353",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/9b21ea89de1b02e3cf1db5941bff57627793d6dd",
+                "reference": "9b21ea89de1b02e3cf1db5941bff57627793d6dd",
                 "shasum": ""
             },
             "require": {
@@ -562,7 +562,7 @@
             ],
             "description": "Symfony Finder Component",
             "homepage": "http://symfony.com",
-            "time": "2013-04-22 04:29:54"
+            "time": "2013-05-27 20:26:32"
         },
         {
             "name": "symfony/http-foundation",
@@ -796,12 +796,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Translation.git",
-                "reference": "70fddb8499919f459322b9857ada7824722db9df"
+                "reference": "ed0c7257bfc533205dff78f9d247c2544c830ddc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Translation/zipball/70fddb8499919f459322b9857ada7824722db9df",
-                "reference": "70fddb8499919f459322b9857ada7824722db9df",
+                "url": "https://api.github.com/repos/symfony/Translation/zipball/ed0c7257bfc533205dff78f9d247c2544c830ddc",
+                "reference": "ed0c7257bfc533205dff78f9d247c2544c830ddc",
                 "shasum": ""
             },
             "require": {
@@ -818,7 +818,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "2.3-dev"
+                    "dev-master": "2.4-dev"
                 }
             },
             "autoload": {
@@ -842,7 +842,7 @@
             ],
             "description": "Symfony Translation Component",
             "homepage": "http://symfony.com",
-            "time": "2013-05-13 14:36:40"
+            "time": "2013-05-16 07:54:39"
         },
         {
             "name": "symfony/twig-bridge",
@@ -904,17 +904,64 @@
             "time": "2013-04-22 04:28:40"
         },
         {
+            "name": "symfony/yaml",
+            "version": "dev-master",
+            "target-dir": "Symfony/Component/Yaml",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/symfony/Yaml.git",
+                "reference": "82100c7732c95452702d11433aad50988700d36c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/symfony/Yaml/zipball/82100c7732c95452702d11433aad50988700d36c",
+                "reference": "82100c7732c95452702d11433aad50988700d36c",
+                "shasum": ""
+            },
+            "require": {
+                "php": ">=5.3.3"
+            },
+            "type": "library",
+            "extra": {
+                "branch-alias": {
+                    "dev-master": "2.4-dev"
+                }
+            },
+            "autoload": {
+                "psr-0": {
+                    "Symfony\\Component\\Yaml\\": ""
+                }
+            },
+            "notification-url": "http://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Fabien Potencier",
+                    "email": "fabien@symfony.com"
+                },
+                {
+                    "name": "Symfony Community",
+                    "homepage": "http://symfony.com/contributors"
+                }
+            ],
+            "description": "Symfony Yaml Component",
+            "homepage": "http://symfony.com",
+            "time": "2013-05-16 07:54:39"
+        },
+        {
             "name": "twig/twig",
             "version": "dev-master",
             "source": {
                 "type": "git",
                 "url": "https://github.com/fabpot/Twig.git",
-                "reference": "ba88c755579c06e7ccb5ee73c6e27e88a1fed114"
+                "reference": "e8be092e18501d7a721b0ad1220f7d74d5c2a863"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/fabpot/Twig/zipball/ba88c755579c06e7ccb5ee73c6e27e88a1fed114",
-                "reference": "ba88c755579c06e7ccb5ee73c6e27e88a1fed114",
+                "url": "https://api.github.com/repos/fabpot/Twig/zipball/e8be092e18501d7a721b0ad1220f7d74d5c2a863",
+                "reference": "e8be092e18501d7a721b0ad1220f7d74d5c2a863",
                 "shasum": ""
             },
             "require": {
@@ -950,7 +997,7 @@
             "keywords": [
                 "templating"
             ],
-            "time": "2013-05-17 10:06:31"
+            "time": "2013-05-29 07:19:45"
         }
     ],
     "packages-dev": [
