@@ -32,11 +32,13 @@ $app->register(new TwigServiceProvider(), array(
 ));
 
 // Translation
-$app->register(new TranslationServiceProvider());
+$app->register(new TranslationServiceProvider(), array(
+	'locale_fallback' => $app['locale'],
+));
 $app['translator'] = $app->share($app->extend('translator', function($translator, $app) {
     $translator->addLoader('yaml', new YamlFileLoader());
 
-    $translator->addResource('yaml', dirname(__DIR__) . '/ressources/locales/fr.yml', 'fr');
+    $translator->addResource('yaml', dirname(__DIR__) . '/ressources/locales/en.yml', 'en');
 
     return $translator;
 }));

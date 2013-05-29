@@ -9,6 +9,7 @@
 		"leafo/lessphp"			: "dev-master",
         "monolog/monolog"       : "~1.0",
 		"symfony/translation"	: "~2.3",
-		"symfony/yaml"          : "~2.2"
+		"symfony/config": "~2.3",
+		"symfony/yaml": "~2.3"
     }
 }
