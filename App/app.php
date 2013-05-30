@@ -92,5 +92,7 @@ if (isset($app['assetic.enabled']) && $app['assetic.enabled']) {
 	);
 }
 
+$app->register(new Silex\Provider\DoctrineServiceProvider());
+
 // Routage vers les controllers
 require 'routing.php';

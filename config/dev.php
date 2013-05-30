@@ -28,3 +28,12 @@ $app['assetic.input.path_to_js']        = array(
 $app['assetic.output.path_to_js']       = 'js/scripts.js';
 
 $app['monolog.level'] = Monolog\Logger::DEBUG;
+
+// Doctrine (db)
+$app['db.options'] = array(
+    'driver'   => 'pdo_mysql',
+    'host'     => 'localhost',
+    'dbname'   => 'silex_init',
+    'user'     => 'root',
+    'password' => '',
+);

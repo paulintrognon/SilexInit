@@ -16,3 +16,12 @@ error_reporting(0);
 $app['assetic.enabled'] = false;
 
 $app['monolog.level'] = Monolog\Logger::WARNING;
+
+// Doctrine (db)
+$app['db.options'] = array(
+    'driver'   => 'pdo_mysql',
+    'host'     => 'localhost',
+    'dbname'   => 'silex_init',
+    'user'     => 'root',
+    'password' => '',
+);
