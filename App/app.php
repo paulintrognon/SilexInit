@@ -24,7 +24,7 @@ $app->register(new HttpCacheServiceProvider());
 
 // Twig
 $app->register(new TwigServiceProvider(), array(
-    "twig.path" => dirname(__DIR__) . "/ressources/Views",
+    "twig.path" => ROOT_PATH . "ressources/Views",
     'twig.options' => array(
 		'cache' => isset($app['twig.options.cache']) ? $app['twig.options.cache'] : false,
 		'strict_variables' => true
@@ -39,7 +39,7 @@ $app['translator'] = $app->share($app->extend('translator', function($translator
     $translator->addLoader('yaml', new YamlFileLoader());
 
 	foreach($app['other_locales'] as $other_locale) {
-		$translator->addResource('yaml', dirname(__DIR__) . '/ressources/locales/' . $other_locale . '.yml', $other_locale);
+		$translator->addResource('yaml', ROOT_PATH . 'ressources/locales/' . $other_locale . '.yml', $other_locale);
 	}
 
     return $translator;
@@ -47,7 +47,7 @@ $app['translator'] = $app->share($app->extend('translator', function($translator
 
 // Monolog
 $app->register(new MonologServiceProvider(), array(
-    'monolog.logfile' => __DIR__.'/../log/app.log',
+    'monolog.logfile' => ROOT_PATH . 'log/app.log',
     'monolog.name'    => 'app',
     'monolog.level'   => $app['monolog.level']
 ));
