@@ -93,6 +93,7 @@ if (isset($app['assetic.enabled']) && $app['assetic.enabled']) {
 }
 
 $app->register(new Silex\Provider\DoctrineServiceProvider());
+$app->register(new Silex\Provider\SwiftmailerServiceProvider());
 
 // Routage vers les controllers
 require 'routing.php';

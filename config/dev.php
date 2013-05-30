@@ -37,3 +37,13 @@ $app['db.options'] = array(
     'user'     => 'root',
     'password' => '',
 );
+
+// Swift Mailer
+$app['swiftmailer.options'] = array(
+    'host' => 'host',
+    'port' => '25',
+    'username' => '',
+    'password' => '',
+    'encryption' => null,
+    'auth_mode' => null
+);
