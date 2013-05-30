@@ -17,8 +17,10 @@ define('ROOT_PATH', realpath(__DIR__.'/../').'/');
  * CONFIGURATION DU SERVEUR
  */
 ini_set('date.timezone', 'Europe/Paris');
-// Local
+// Local par defaut
 $app['locale'] = 'fr';
+// Autres languages supportées
+$app['other_locales'] = ['en'];
 
 /*
  * CONFIGURATION DES REPERTOIRES

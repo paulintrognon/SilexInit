@@ -38,17 +38,12 @@ $app->register(new TranslationServiceProvider(), array(
 $app['translator'] = $app->share($app->extend('translator', function($translator, $app) {
     $translator->addLoader('yaml', new YamlFileLoader());
 
-    $translator->addResource('yaml', dirname(__DIR__) . '/ressources/locales/en.yml', 'en');
+	foreach($app['other_locales'] as $other_locale) {
+		$translator->addResource('yaml', dirname(__DIR__) . '/ressources/locales/' . $other_locale . '.yml', $other_locale);
+	}
 
     return $translator;
 }));
-
-$current_language = $app['session']->get('current_language');
-
-if($current_language) {
-	$app['translator']->setLocale($current_language);
-}
-
 
 // Monolog
 $app->register(new MonologServiceProvider(), array(

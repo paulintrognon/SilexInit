@@ -13,9 +13,9 @@
 	<body>
 		<div id="content">
 
-			<a href="{{ path('execute.language', {language: 'fr'}) }}">Français</a>
-			<a href="{{ path('execute.language', {language: 'en'}) }}">English</a>
-
+			<a href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale': 'fr'})) }}">Français</a>
+			<a href="{{ path(app.request.attributes.get('_route'), app.request.attributes.get('_route_params')|merge({'_locale': 'en'})) }}">English</a>
+			
 			{% block pageContent %}
 				
 			{% endblock %}

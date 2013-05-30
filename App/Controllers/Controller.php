@@ -27,6 +27,8 @@ namespace App\Controllers {
 				
 				$currentController
 					->match($route, $controllerClassName.'::'.$method)
+					// ajout d'une vérification le la variable 'locale' entrée dans l'url : elle doit faire partie des langues supportées
+					->assert('_locale', $app['locale'].'|'.implode('|', $app['other_locales']))
 					->bind($this->controllerName.'.'.$method);
 			}
 			

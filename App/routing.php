@@ -8,5 +8,11 @@
  * ===============
  */
 
-$app->mount("/", new App\Controllers\HomeController());
-$app->mount("/execute", new App\Controllers\ExecuteController());
+$app->get('/', function() use($app) {
+	
+	return $app->redirect($app['translator']->getLocale());
+});
+
+$locale_route = '{_locale}';
+
+$app->mount($locale_route.'/', new App\Controllers\HomeController());
