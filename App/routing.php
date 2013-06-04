@@ -15,4 +15,4 @@ $app->get('/', function() use($app) {
 
 $locale_route = '{_locale}';
 
-$app->mount($locale_route.'/', new App\Controllers\HomeController());
+$app->mount($locale_route.'/', new App\Controllers\IndexController());

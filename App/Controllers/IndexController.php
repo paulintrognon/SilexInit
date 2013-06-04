@@ -7,7 +7,7 @@ namespace App\Controllers {
     class IndexController extends Controller {
 
         public function home(Application $app) {
-			return $app["twig"]->render("index/index.html.twig");
+			return $app["twig"]->render("index/home.html.twig");
         }
 		
 		protected function connectMethods() {

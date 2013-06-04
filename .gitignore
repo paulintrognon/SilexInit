@@ -4,3 +4,4 @@ log/app.log
 web/js/
 web/css/
 composer.phar
+.idea/
