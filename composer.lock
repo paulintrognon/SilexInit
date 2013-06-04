@@ -3,7 +3,7 @@
         "This file locks the dependencies of your project to a known state",
         "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
     ],
-    "hash": "8912763d5a3238fa2962c5edead40558",
+    "hash": "7f85233f0673dffa7b8c58e0e8be06a4",
     "packages": [
         {
             "name": "kriswallsmith/assetic",
@@ -11,12 +11,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/kriswallsmith/assetic.git",
-                "reference": "de188e471f59918b0b523b8fc346761c2e4ff1a4"
+                "reference": "d5311bf231ecf8a1e4b8ae00dcb15651b63dfed5"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/de188e471f59918b0b523b8fc346761c2e4ff1a4",
-                "reference": "de188e471f59918b0b523b8fc346761c2e4ff1a4",
+                "url": "https://api.github.com/repos/kriswallsmith/assetic/zipball/d5311bf231ecf8a1e4b8ae00dcb15651b63dfed5",
+                "reference": "d5311bf231ecf8a1e4b8ae00dcb15651b63dfed5",
                 "shasum": ""
             },
             "require": {
@@ -74,7 +74,7 @@
                 "compression",
                 "minification"
             ],
-            "time": "2013-05-29 08:54:41"
+            "time": "2013-06-04 14:31:31"
         },
         {
             "name": "leafo/lessphp",
@@ -408,55 +408,6 @@
             "time": "2013-05-08 12:49:14"
         },
         {
-            "name": "swiftmailer/swiftmailer",
-            "version": "v4.1.8",
-            "source": {
-                "type": "git",
-                "url": "git://github.com/swiftmailer/swiftmailer.git",
-                "reference": "v4.1.8"
-            },
-            "dist": {
-                "type": "zip",
-                "url": "https://github.com/swiftmailer/swiftmailer/zipball/v4.1.8",
-                "reference": "v4.1.8",
-                "shasum": ""
-            },
-            "require": {
-                "php": ">=5.2.4"
-            },
-            "type": "library",
-            "extra": {
-                "branch-alias": {
-                    "dev-master": "4.1-dev"
-                }
-            },
-            "autoload": {
-                "files": [
-                    "lib/swift_required.php"
-                ]
-            },
-            "notification-url": "http://packagist.org/downloads/",
-            "license": [
-                "LGPL"
-            ],
-            "authors": [
-                {
-                    "name": "Fabien Potencier",
-                    "email": "fabien@symfony.com"
-                },
-                {
-                    "name": "Chris Corbyn"
-                }
-            ],
-            "description": "Swiftmailer, free feature-rich PHP mailer",
-            "homepage": "http://swiftmailer.org",
-            "keywords": [
-                "mail",
-                "mailer"
-            ],
-            "time": "2012-06-17 13:55:34"
-        },
-        {
             "name": "symfony/config",
             "version": "dev-master",
             "target-dir": "Symfony/Component/Config",
@@ -511,12 +462,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Debug.git",
-                "reference": "60d593cc32c291392339b0955a4e8cd4b0c44551"
+                "reference": "bcf326c347d9e2ccafde5e30fb938e09255f6c1a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Debug/zipball/60d593cc32c291392339b0955a4e8cd4b0c44551",
-                "reference": "60d593cc32c291392339b0955a4e8cd4b0c44551",
+                "url": "https://api.github.com/repos/symfony/Debug/zipball/bcf326c347d9e2ccafde5e30fb938e09255f6c1a",
+                "reference": "bcf326c347d9e2ccafde5e30fb938e09255f6c1a",
                 "shasum": ""
             },
             "require": {
@@ -558,7 +509,7 @@
             ],
             "description": "Symfony Debug Component",
             "homepage": "http://symfony.com",
-            "time": "2013-05-16 07:54:39"
+            "time": "2013-06-02 12:05:59"
         },
         {
             "name": "symfony/event-dispatcher",
@@ -668,12 +619,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Finder.git",
-                "reference": "9b21ea89de1b02e3cf1db5941bff57627793d6dd"
+                "reference": "v2.2.2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Finder/zipball/9b21ea89de1b02e3cf1db5941bff57627793d6dd",
-                "reference": "9b21ea89de1b02e3cf1db5941bff57627793d6dd",
+                "url": "https://api.github.com/repos/symfony/Finder/zipball/v2.2.2",
+                "reference": "v2.2.2",
                 "shasum": ""
             },
             "require": {
@@ -765,12 +716,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/HttpKernel.git",
-                "reference": "22a755a39e2ccae40fa3d5d441afe0365a98282b"
+                "reference": "4f0f6485abe0e2e8b8a94369fb98b8447fb1e3cc"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/22a755a39e2ccae40fa3d5d441afe0365a98282b",
-                "reference": "22a755a39e2ccae40fa3d5d441afe0365a98282b",
+                "url": "https://api.github.com/repos/symfony/HttpKernel/zipball/4f0f6485abe0e2e8b8a94369fb98b8447fb1e3cc",
+                "reference": "4f0f6485abe0e2e8b8a94369fb98b8447fb1e3cc",
                 "shasum": ""
             },
             "require": {
@@ -826,7 +777,7 @@
             ],
             "description": "Symfony HttpKernel Component",
             "homepage": "http://symfony.com",
-            "time": "2013-05-16 21:58:08"
+            "time": "2013-06-03 15:11:57"
         },
         {
             "name": "symfony/process",
@@ -882,12 +833,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/symfony/Routing.git",
-                "reference": "255e1163b74a22cd83d3fd51d63c0588afe0bc56"
+                "reference": "v2.3.0"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/symfony/Routing/zipball/255e1163b74a22cd83d3fd51d63c0588afe0bc56",
-                "reference": "255e1163b74a22cd83d3fd51d63c0588afe0bc56",
+                "url": "https://api.github.com/repos/symfony/Routing/zipball/v2.3.0",
+                "reference": "v2.3.0",
                 "shasum": ""
             },
             "require": {
